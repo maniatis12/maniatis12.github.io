@@ -7,3 +7,4 @@ fetch("http://chess-dev.com/tournament/create").then((response) => response.text
         
  var a = doc.getElementById('tournament-post-form').dataset.token;
  alert(a);
+}
