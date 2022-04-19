@@ -1,5 +1,5 @@
 alert("3");
-fetch("http://chess-dev.com/tournament/create").then((response) => response.text())
+fetch("https://chess-dev.com/tournament/create").then((response) => response.text())
     .then((text) => {
                 var parser = new DOMParser();
 
