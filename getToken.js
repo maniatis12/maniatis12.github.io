@@ -1,3 +1,4 @@
+alert("start");
 fetch("http://chess-dev.com/tournament/create").then((response) => response.text())
     .then((text) => {
                 var parser = new DOMParser();
