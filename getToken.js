@@ -1,7 +1,7 @@
 alert("6");
 //https://chess-dev.com/tournament/create
 
-
+/*
 fetch("https://chess-dev.com/tournament/create").then((response) => response.text())
     .then((text) => {
                 var parser = new DOMParser();
@@ -11,7 +11,33 @@ fetch("https://chess-dev.com/tournament/create").then((response) => response.tex
  var a = doc.getElementById('tournament-post-form').dataset.token;
  alert(a);
 })
+*/
+fetch("https://chess-dev.com/tournament/create", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://www.chess-dev.com/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "omit"
+}).then((response) => response.text())
+    .then((text) => {
+                var parser = new DOMParser();
 
+        var doc = parser.parseFromString(text, "text/html");
+        
+ var a = doc.getElementById('tournament-post-form').dataset.token;
+ alert(a);
+})
 
 /*fetch("https://chess-dev.com/callback/messages/list/inbox").then(response => response.json())
   .then(data => {console.log(data);
