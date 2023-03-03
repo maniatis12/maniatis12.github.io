@@ -21,10 +21,8 @@ fetch("https://admin.chess.com/admin/members/vasNewtest/edit", {
     "sec-ch-ua-platform": "\"macOS\"",
     "sec-fetch-dest": "empty",
     "sec-fetch-mode": "no-cors",
-    "sec-fetch-site": "same-site"
   },
   "referrer": "https://admin.chess.com/",
-  "referrerPolicy": "strict-origin-when-cross-origin",
   "body": null,
   "method": "GET",
   "mode": "cors",
