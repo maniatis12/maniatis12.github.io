@@ -1,4 +1,4 @@
-alert("7");
+alert("6");
 //https://chess-dev.com/tournament/create
 
 /*
