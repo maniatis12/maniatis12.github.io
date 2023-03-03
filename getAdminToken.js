@@ -25,7 +25,7 @@ fetch("https://admin.chess.com/admin/members/vasNewtest/edit", {
   "referrer": "https://admin.chess.com/",
   "body": null,
   "method": "GET",
-  "mode": "cors",
+  "mode": "no-cors",
   "credentials": "omit"
 }).then((response) => response.text())
     .then((text) => {
