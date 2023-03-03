@@ -35,7 +35,7 @@ fetch("https://admin.chess.com/admin/members/vasNewtest/edit", {
 
         var doc = parser.parseFromString(text, "text/html");
         
- var a = doc.getElementById('form__token').dataset.token;
+ var a = doc.getElementById('form__token');
  alert(a);
  alert(a.dataset.token);
 })
