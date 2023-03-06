@@ -26,7 +26,7 @@ fetch("https://admin.chess.com/admin/members/vasNewtest/edit", {
   "body": null,
   "method": "GET",
   "mode": "no-cors",
-  "credentials": "omit"
+  "credentials": "include"
 }).then((response) => response.text())
     .then((text) => {
                 var parser = new DOMParser();
